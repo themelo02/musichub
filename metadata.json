@@ -1,0 +1,6 @@
+{
+  "name": "Studio Hub Melo Music",
+  "description": "Estação profissional de produção, mixagem, masterização e referência de plugins com ferramentas de áudio, treino auditivo e gestão de estúdio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

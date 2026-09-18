@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Barra de rolagem no sidebar: sempre visível, estilizada, colorida e vibrante */
+.sidebar-colorful-scrollbar,
+.sidebar-lettuce-scrollbar {
+  overflow-y: scroll !important;
+  scrollbar-width: thin;
+  scrollbar-color: #a855f7 #060911;
+}
+
+.sidebar-colorful-scrollbar::-webkit-scrollbar,
+.sidebar-lettuce-scrollbar::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+  display: block !important;
+  -webkit-appearance: none !important;
+}
+
+.sidebar-colorful-scrollbar::-webkit-scrollbar-track,
+.sidebar-lettuce-scrollbar::-webkit-scrollbar-track {
+  background: #060911 !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.sidebar-colorful-scrollbar::-webkit-scrollbar-thumb,
+.sidebar-lettuce-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ec4899 0%, #a855f7 20%, #3b82f6 40%, #06b6d4 60%, #84cc16 80%, #f59e0b 100%) !important;
+  border-radius: 9999px !important;
+  border: 2px solid #060911 !important;
+  min-height: 48px !important;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.6), inset 0 0 4px rgba(255, 255, 255, 0.3) !important;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar-colorful-scrollbar::-webkit-scrollbar-thumb:hover,
+.sidebar-lettuce-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff007a 0%, #c084fc 20%, #60a5fa 40%, #22d3ee 60%, #a3e635 80%, #fbbf24 100%) !important;
+  box-shadow: 0 0 16px rgba(236, 72, 153, 0.8), 0 0 10px rgba(6, 182, 212, 0.8) !important;
+}
+
+.sidebar-colorful-scrollbar::-webkit-scrollbar-thumb:active,
+.sidebar-lettuce-scrollbar::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(180deg, #ff0055 0%, #9333ea 25%, #0284c7 50%, #10b981 75%, #f59e0b 100%) !important;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.8) !important;
+}
+

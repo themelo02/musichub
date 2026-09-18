@@ -1,0 +1,71 @@
+import { ReferenceTrack, TutorialVideo, QuizQuestion } from '../types';
+
+export const DEFAULT_REFERENCES: ReferenceTrack[] = [
+  { genre: 'Afrobeat', track: 'Essence', artist: 'Wizkid ft. Tems', year: 2020, lufs: '-10 LUFS', why: 'Graves aveludados, vocais quentes e percussões com micro-dinâmica impecável.' },
+  { genre: 'Afrobeat', track: 'Calm Down', artist: 'Rema', year: 2022, lufs: '-9.5 LUFS', why: 'Mix super brilhante, vocal upfront e transientes de percussão estalados.' },
+  { genre: 'Afrobeat', track: 'Last Last', artist: 'Burna Boy', year: 2022, lufs: '-9 LUFS', why: 'Peso de subgrave e kick interligados sem perda de definição melódica.' },
+  { genre: 'Hip-Hop/Rap', track: 'SICKO MODE', artist: 'Travis Scott', year: 2018, lufs: '-8.5 LUFS', why: 'Kick punchy brutal, 808 profundo, transições dinâmicas de beat e vocais à frente.' },
+  { genre: 'Hip-Hop/Rap', track: 'HUMBLE.', artist: 'Kendrick Lamar', year: 2017, lufs: '-9 LUFS', why: 'Dinâmica contundente no piano e no 808, transientes agressivos e presença seca.' },
+  { genre: 'Trap', track: 'Mask Off', artist: 'Future', year: 2017, lufs: '-8 LUFS', why: '808 saturada, hi-hats ultra afiados e flauta central com espaço acústico.' },
+  { genre: 'Trap', track: 'Bad and Boujee', artist: 'Migos', year: 2016, lufs: '-9 LUFS', why: 'Trap moderno referencial em equilíbrio de frequências e automação de adlibs.' },
+  { genre: 'R&B', track: 'Blinding Lights', artist: 'The Weeknd', year: 2019, lufs: '-8 LUFS', why: 'Master loud, coeso, sintetizadores analógicos dos anos 80 com peso moderno.' },
+  { genre: 'R&B', track: 'Snooze', artist: 'SZA', year: 2022, lufs: '-11 LUFS', why: 'Voz super íntima, arranjo minimalista com espaço e calor acústico.' },
+  { genre: 'Pop', track: 'As It Was', artist: 'Harry Styles', year: 2022, lufs: '-8.5 LUFS', why: 'Mix pop contemporânea com vocal upfront, bateria viva e agudos sedosos.' },
+  { genre: 'Pop', track: 'Levitating', artist: 'Dua Lipa', year: 2020, lufs: '-8 LUFS', why: 'Dance-pop moderno com baixo incisivo e inteligibilidade máxima em fones.' },
+  { genre: 'EDM', track: 'Titanium', artist: 'David Guetta ft. Sia', year: 2011, lufs: '-7 LUFS', why: 'Clássico de loudness extremo, compressão sidechain maciça e vocal poderoso.' },
+  { genre: 'Rock', track: 'Smells Like Teen Spirit', artist: 'Nirvana', year: 1991, lufs: '-9 LUFS', why: 'Bateria acústica orgânica, guitarras em camadas L/R e dinâmica pura.' },
+  { genre: 'Gospel', track: 'Way Maker', artist: 'Sinach', year: 2015, lufs: '-10 LUFS', why: 'Vocais corais majestosos, ambiência e reverbs épicos de congregação.' }
+];
+
+export const OFFICIAL_TUTORIALS: TutorialVideo[] = [
+  { cat: 'vocals', title: 'Waves Tune Real-Time — Afinação em tempo real e tracking', yt: 'dQw4w9WgXcQ' },
+  { cat: 'vocals', title: 'Waves CLA Vocals — Channel strip completo para voz', yt: 'hT_nvWreIhg' },
+  { cat: 'vocals', title: 'Waves Clarity Vx — Limpeza e remoção de ruído neural IA', yt: '_VF4AJUWAHQ' },
+  { cat: 'vocals', title: 'Waves DeEsser — Redução cirúrgica de sibilância', yt: 'mWRsgZuwf_8' },
+  { cat: 'vocals', title: 'Waves Vocal Rider — Automação de ganho vocal transparente', yt: '3JZ_D3ELwOQ' },
+  { cat: 'eq', title: 'Waves Q10 — Equalização paramétrica de 10 bandas', yt: 'ZsVkV11Z4QNE' },
+  { cat: 'eq', title: 'Waves SSL E-Channel — O lendário equalizador de console SSL', yt: '7wtfhZwyrcc' },
+  { cat: 'eq', title: 'Waves F6 Dynamic EQ — Equalização dinâmica e sidechain', yt: 'kXYiU_JCYtU' },
+  { cat: 'eq', title: 'Waves Scheps 73 — Emulação Neve clássica e calor analógico', yt: 'fJ9rUzIMcZQ' },
+  { cat: 'comp', title: 'Waves CLA-2A — O clássico compressor óptico valvulado', yt: 'e-ORhEE9VVg' },
+  { cat: 'comp', title: 'Waves CLA-76 — O compressor FET mais rápido do estúdio', yt: 'RgKAFK5djSk' },
+  { cat: 'comp', title: 'Waves SSL G-Master — A cola analógica definitiva para o Mix Bus', yt: 'OPf0YbXqDm0' },
+  { cat: 'comp', title: 'Waves API 2500 — Compressão estéreo de alto impacto e punch', yt: '09R8_2nJtjg' },
+  { cat: 'drums', title: 'Waves CLA Drums — Multi-efeito completo para bateria e percussão', yt: 'CevxZvSJLk8' },
+  { cat: 'drums', title: 'Waves Smack Attack — Controle de transientes de ataque e sustain', yt: 'YQHsXMglC9A' },
+  { cat: 'drums', title: 'Waves Maserati DRM — Processamento signature para tambores', yt: 'hLQl3WQQoQ0' },
+  { cat: 'bass', title: 'Waves MaxxBass — Geração de harmónicos graves audíveis em celulares', yt: 'nfWlot6h_JM' },
+  { cat: 'bass', title: 'Waves Rbass — Reforço preciso e peso de subgrave', yt: 'JGwWNGJdvx8' },
+  { cat: 'bass', title: 'Waves CLA Bass — Processamento de baixo em linha e distorção', yt: 'PT2_F-1esPk' },
+  { cat: 'master', title: 'Waves L2 Ultramaximizer — O clássico limitador brickwall', yt: 'pRpeEdMmmQ0' },
+  { cat: 'master', title: 'Waves L3-16 — Limitador de pico multibanda de 16 faixas', yt: '1w7OgIMMRc4' },
+  { cat: 'master', title: 'Waves Abbey Road TG — Suite de masterização lendária', yt: 'SlPhMPnQ58k' },
+  { cat: 'master', title: 'Waves WLM Plus — Medição de Loudness LUFS e True Peak para streaming', yt: 'lp-EO5I60KA' },
+  { cat: 'fx', title: 'Waves H-Delay — Delay analógico/digital com modulação e ping-pong', yt: 'fLexgOxsZu0' },
+  { cat: 'fx', title: 'Waves TrueVerb — Reverb acústico com simulação de sala e distância', yt: 'kJQP7kiw5Fk' },
+  { cat: 'fx', title: 'Waves Kramer Master Tape — Saturação de fita magnética de rolo', yt: 'RgKAFK5djSk' },
+  { cat: 'fx', title: 'Waves Berzerk Distortion — Distorção criativa com modos feedback', yt: '9bZkp7q19f0' }
+];
+
+export const QUIZ_QUESTIONS: QuizQuestion[] = [
+  { q: 'Vocal com excesso de dinâmica irregular na performance. Qual é a primeira escolha ideal?', a: 'Waves CLA-2A', wrong: ['Waves Q10', 'Waves H-Delay', 'Waves L2'] },
+  { q: 'Sibilância desagradável em 6–8 kHz na voz. Qual plugin resolve de forma musical?', a: 'Waves DeEsser', wrong: ['Waves CLA-76', 'Waves TrueVerb', 'Waves SSL E-Channel'] },
+  { q: 'O bumbo (kick) precisa de mais ataque e transiente inicial sem subir todo o volume. O que usar?', a: 'Waves Smack Attack', wrong: ['Waves DeEsser', 'Waves H-Delay', 'Waves L3-16'] },
+  { q: 'O contrabaixo não é audível em alto-falantes de smartphones ou notebooks. Como resolver?', a: 'Waves MaxxBass', wrong: ['Waves CLA-2A', 'Waves TrueVerb', 'Waves S1 Stereo Imager'] },
+  { q: 'O Mix Bus precisa de coesão e cola sonora analógica (bus glue). Qual é o compressor padrão da indústria?', a: 'Waves SSL G-Master', wrong: ['Waves Q10', 'Waves TrueVerb', 'Waves DeEsser'] },
+  { q: 'A etapa final de masterização requer ganho de volume transparente e proteção estrita contra clipping digital. O que aplicar?', a: 'Waves L3-16 Multimaximizer', wrong: ['Waves CLA-2A', 'Waves H-Delay', 'Waves F6 Dynamic EQ'] },
+  { q: 'A imagem estéreo do instrumental soa estreita e fechada. Qual plugin expande a largura com segurança de fase?', a: 'Waves S1 Stereo Imager', wrong: ['Waves CLA-76', 'Waves DeEsser', 'Waves H-Comp Hybrid'] },
+  { q: 'Vocal feminino soa abafado e precisa de presença aveludada sem aspereza. O que usar?', a: 'Waves Silk Vocal', wrong: ['Waves L2', 'Waves Smack Attack', 'Waves MaxxBass'] },
+  { q: 'Gravação vocal contém ruído de ar condicionado e tráfego de fundo. Qual ferramenta de IA resolve?', a: 'Waves Clarity Vx', wrong: ['Waves CLA-2A', 'Waves H-Delay', 'Waves S1 Stereo Imager'] },
+  { q: 'Região de 200–400 Hz do bumbo está mascarando o baixo de forma variável. Qual equalizador trata isso?', a: 'Waves F6 Dynamic EQ', wrong: ['Waves TrueVerb', 'Waves DeEsser', 'Waves L3-16'] },
+  { q: 'Respirações excessivamente altas entre as frases da voz principal. Qual plugin remove automaticamente?', a: 'Waves DeBreath', wrong: ['Waves CLA-76', 'Waves Smack Attack', 'Waves MaxxBass'] },
+  { q: 'A caixa da bateria (snare) precisa de corpo e peso na região de 200 Hz. Qual EQ analógico é lendário para isso?', a: 'Waves API 550', wrong: ['Waves L2', 'Waves H-Delay', 'Waves DeEsser'] },
+  { q: 'Oitocentos e oito (808) precisa de controle rápido de transiente e compressão enérgica. O que usar?', a: 'Waves CLA-76', wrong: ['Waves Q10', 'Waves TrueVerb', 'Waves S1 Stereo Imager'] },
+  { q: 'O drum bus requer compressão com soco, controle de joelho (thrust) e punch marcante. Qual usar?', a: 'Waves API 2500', wrong: ['Waves DeEsser', 'Waves H-Delay', 'Waves Smack Attack'] },
+  { q: 'Piano acústico soa sem definição e precisa sentar na mix moderna com clareza. Qual ferramenta signature usar?', a: 'Waves Greg Wells PianoCentric', wrong: ['Waves CLA-76', 'Waves L3-16', 'Waves S1 Stereo Imager'] },
+  { q: 'Sintetizador soa estático e precisa de movimento analógico e filtro modulado. Qual usar?', a: 'Waves Element 2.0', wrong: ['Waves CLA-2A', 'Waves DeEsser', 'Waves L2'] },
+  { q: 'Guitarras ou sintetizadores solos necessitam de eco sincronizado ao BPM com filtro passa-altas/baixas. Qual é o delay essencial?', a: 'Waves H-Delay', wrong: ['Waves Q10', 'Waves TrueVerb', 'Waves F6 Dynamic EQ'] },
+  { q: 'Monitoramento de integridade de Loudness (LUFS integrado e True Peak) para Spotify e Apple Music. Qual usar?', a: 'Waves WLM Plus', wrong: ['Waves CLA-2A', 'Waves Smack Attack', 'Waves H-Delay'] },
+  { q: 'Hi-hat soa excessivamente estridente em 10 kHz. O que usar para corte cirúrgico?', a: 'Waves Q10', wrong: ['Waves TrueVerb', 'Waves CLA-2A', 'Waves MaxxBass'] },
+  { q: 'Vocal gravado em quarto sem tratamento com eco indesejado de parede. Qual IA remove o reverb?', a: 'Waves Clarity Vx DeReverb', wrong: ['Waves CLA-76', 'Waves L2', 'Waves Smack Attack'] }
+];
